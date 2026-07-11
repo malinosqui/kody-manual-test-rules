@@ -7,3 +7,13 @@ module Payments
     end
   end
 end
+
+module Payments
+  class Refund
+    def refund!(payment)
+      raise RefundNotAllowed unless payment.settled?
+
+      payment.reverse
+    end
+  end
+end
