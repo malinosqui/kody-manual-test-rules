@@ -4,3 +4,9 @@ class User
     @name
   end
 end
+
+class Account
+  def close!(reason)
+    @closed_reason = reason
+  end
+end
