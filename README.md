@@ -1,0 +1,1 @@
+# kody-manual-test-rules
